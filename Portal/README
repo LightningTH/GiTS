@@ -1,0 +1,9 @@
+BigFont.png was borrowed from http://www.henningkarlsen.com/electronics/r_fonts.php and is used for the text written to the RGB fields
+
+Generate-AIF.py generates an AIF file and also generates the bitmap that will be sent into QSSTV. QSSTV was told to encode a P180 format. It's menu settings allow you to input and output wav files
+portal-gen-pngs.py generates the actual PNGs used to create the video
+portal-gen.sh creates the actual video. There is a bug that going from png to ogv resulted in a rainbow effect on the letters
+
+I created the answer.bmp with Generate-AIF.py and passed the resulting bitmap to QSSTV after telling to save a wav file in the menu. I used the P180 format. Apparently multiple encodes results in appending to the wav file that is generated.
+
+I then ran portal-gen.sh and sent the results to fuzyll along with an audio recording of the lyrics for him to autotune and combine.
