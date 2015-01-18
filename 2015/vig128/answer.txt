@@ -1,0 +1,23 @@
+The goal is to leak the "System Key", which isn't very hard to do since you can control the IV and plaintext values, and force the system to revert to using System Key by supplying an invalid key. 
+
+Set the IV and the plaintext to the same values, and they'll cancel out, leaving the key value exposed.
+
+But you can't leak it all at once since the System Key is 40 bytes long and the format of the returned ciphertext (8 bytes ciphertext, 8 bytes padding) allows at most 8 bytes of the key leaked per block. And the window of leaked key only moves 1 byte per block, so you'll need about 40 blocks to expose the entire key, which is when you'll see the leaked key string start to repeat.
+
+There's also another small hurdle to deal with. If you just set the the IV and plaintext to all 'a' or any of the same value, the padding algorithm wont generate enough bytes and error out before you get the leaked key. So you have to append your long homogoneous string with some extra letters so more padding gets generated.
+
+So to solve:
+
+IV = 16*'a'
+
+Key = '' (let it error out and use the System Key)
+
+Plaintext = (50*16*'a')+'bcdefghijklmnopq'
+
+Currently the key is 'radiostakemebysurprisewithgreatfrequencies', a Turing quote that's been punnified. If you need to change it, make sure the new value is longer than 16 characters. If you want to make it a bit harder, make the first 5-8 characters a less obvious word than 'radios'.
+
+You can also release the source if you want to make it really easy, just redact the SystemKey value (obviously).
+
+
+
+
