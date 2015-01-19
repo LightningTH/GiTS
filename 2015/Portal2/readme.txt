@@ -1,8 +1,10 @@
 The data is hidden in the streaming bits in the top/right corner. You could just concat
-all of the bits together however viewing it as Base64 tends to help.
+all of the bits together to get the proper resulting data, however viewing it as Base64
+may help.
 
 If you convert each row of 6 bits and use it as an index to the following string you
-will generate a base 64 string.
+will generate a base64 string. This string is the same string used for encoding base64
+so it was expected that it would be an easy match.
 
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 
