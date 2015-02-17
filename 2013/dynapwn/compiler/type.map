@@ -1,0 +1,13 @@
+ReadDataInfo 0x12f4
+Type_InvalidFile 0x12d4
+Type_WaitForSize2 0x1256
+Type_Loop_Read2 0x12aa
+FileData 0x12fa
+InvalidFileMsg 0x12e0
+Type_OpenWait 0x121a
+GetFileSizeEnd 0x12ee
+Type_Loop_Finish 0x129c
+Type_Loop_Read 0x127a
+Type_Loop 0x126e
+TypeInfo 0x12fa
+Type_WaitForSize 0x123c

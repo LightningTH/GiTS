@@ -1,0 +1,10 @@
+Download_WaitForSize2 0x1256
+Download_WaitForSize 0x123c
+DownloadMsg3 0x12d8
+InvalidFileMsg 0x12b8
+Download_OpenWait 0x121a
+DownloadMsg 0x12c6
+DownloadInfo 0x12e6
+Download_InvalidFile 0x12ac
+GetFileSizeEnd 0x12e0
+DownloadMsg2 0x12d4

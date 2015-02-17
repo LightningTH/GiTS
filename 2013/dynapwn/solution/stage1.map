@@ -1,0 +1,4 @@
+DummyFunc 0x160c
+ModifiedFunc 0x160e
+Continue 0x1624
+WaitForUpload 0x164c

@@ -1,0 +1,13 @@
+ResetScreenBuffer_Loop 0x1326
+flames_copy_loop 0x12e6
+Fire_BlankVideo_Loop 0x133a
+Fire_BlankFireBuffer_Loop 0x1224
+flames 0x134a
+put_spots_noinc 0x1276
+avg_col 0x12a2
+Fire_BlankVideo 0x1334
+randseed 0x1346
+put_spots 0x1260
+avg_row 0x12a6
+flamesinfo 0x134a
+do_fire 0x1238
